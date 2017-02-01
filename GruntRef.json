@@ -1,0 +1,7 @@
+{
+      "source"    : "src/",              //contains the source files
+      "staging"   : "build/staging/",     //used for staging phase
+      "process"   : "build/process/",     //used for process phase
+      "finalize"  : "build/finalize/",    //used for finalization phase
+      "output"    : "build/output         //contains the final output
+}
