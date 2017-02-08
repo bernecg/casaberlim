@@ -1,0 +1,61 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form" >
+    <Dialog
+        id="reserveDialog"
+        title="What time {/recipient/name} will arrive and leave?">
+        <content>
+            <f:Form minWidth="1024"
+                maxContainerCols="2"
+                editable="true">
+                <f:layout>
+                    <f:ResponsiveGridLayout
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        columnsL="1"
+                        columnsM="1" />
+                </f:layout>
+                <f:formContainers>
+                    <f:FormContainer>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:fields>
+                                    <Text
+                                        text="Que horas chegaras?" />
+                                    <TimePicker
+                                        id="arriveTime"
+                                        value="19:00"
+                                        valueFormat="HH:mm"
+                                        displayFormat="HH:mm"
+                                        minutesStep="15"
+                                        change="handleChange" />
+                                </f:fields>
+                            </f:FormElement>
+                            <f:FormElement>
+                                <f:fields>
+                                    <Text
+                                        text="Que horas sairas?" />
+                                    <TimePicker
+                                        id="leaveTime"
+                                        value="23:30"
+                                        valueFormat="HH:mm"
+                                        displayFormat="HH:mm"
+                                        minutesStep="15"
+                                        change="handleChange" />
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+                </f:formContainers>
+            </f:Form>
+        </content>
+        <beginButton>
+            <Button
+                text="{i18n>dialogCloseButtonText}"
+                press="onCloseReserveDialog" />
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

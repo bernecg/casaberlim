@@ -38,6 +38,10 @@
                 "settings": {
                     "bundleName": "bcg.casaberlim.i18n.i18n"
                 }
+            },
+            "members": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "Members.json"
             }
         }
     }

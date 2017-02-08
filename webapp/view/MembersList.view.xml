@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="bcg.casaberlim.controller.MembersList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <List
+        headerText="{i18n>MembersListTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{
+            path: 'members>/Members',
+            sorter : {
+                path: 'isGoing',
+                descending: true
+            }
+        }"
+        >
+        <items>
+            <ObjectListItem
+                title="{members>Nick} | {members>ArrivalTime} - {members>LeaveTime}"
+                press="onOpenReserveDialog"/>
+        </items>
+    </List>
+</mvc:View>

@@ -1,0 +1,25 @@
+{
+    "Members": [
+        {
+            "Name": "Bernard",
+            "Nick": "Berne",
+            "ArrivalTime": "22:00",
+            "LeaveTime": "00:00",
+            "isGoing" : true
+        },
+        {
+            "Name": "Henrique",
+            "Nick": "Jay",
+            "ArrivalTime": "21:15",
+            "LeaveTime": "00:00",
+            "isGoing" : false
+        },
+        {
+            "Name": "Eduardo",
+            "Nick": "Eddy",
+            "ArrivalTime": "21:15",
+            "LeaveTime": "00:00",
+            "isGoing" : true
+        }
+    ]
+}
