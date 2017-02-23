@@ -1,50 +1,61 @@
 <core:FragmentDefinition
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form" >
     <Dialog
         id="reserveDialog"
-        title="What time {/recipient/name} will arrive and leave?">
+        title="{i18n>homePageTitle}">
         <content>
             <f:Form minWidth="1024"
                 maxContainerCols="2"
                 editable="true">
+                <f:toolbar>
+                    <Toolbar id="TB1">
+                        <Title id="Title1" text="{i18n>reserveDialogSwitchText}"
+                            level="H4" titleStyle="H4" />
+                        <Switch state="{selectedMember>/isGoing}"
+                            change="onGoingSwitchChange"
+                            customTextOn="Yep" customTextOff="Nope"
+                            class="sapUiSmallMargin"/>
+                    </Toolbar>
+                </f:toolbar>
                 <f:layout>
-                    <f:ResponsiveGridLayout
-                        labelSpanL="3"
-                        labelSpanM="3"
-                        emptySpanL="4"
-                        emptySpanM="4"
-                        columnsL="1"
-                        columnsM="1" />
+                    <f:ResponsiveGridLayout />
                 </f:layout>
                 <f:formContainers>
                     <f:FormContainer>
                         <f:formElements>
-                            <f:FormElement>
+                            <f:FormElement visible="{selectedMember>/isGoing}"
+                                label="{i18n>reserveDialogArriavelTime}">
                                 <f:fields>
-                                    <Text
-                                        text="Que horas chegaras?" />
                                     <TimePicker
                                         id="arriveTime"
-                                        value="19:00"
+                                        value="{selectedMember>/ArrivalTime}"
                                         valueFormat="HH:mm"
                                         displayFormat="HH:mm"
                                         minutesStep="15"
-                                        change="handleChange" />
+                                        change="handleChange">
+                                        <layoutData>
+                                            <l:GridData span="L2 M2 S5" />
+                                        </layoutData>
+                                    </TimePicker>
                                 </f:fields>
                             </f:FormElement>
-                            <f:FormElement>
+                            <f:FormElement visible="{selectedMember>/isGoing}"
+                                label="{i18n>reserveDialogLeaveTime}">
                                 <f:fields>
-                                    <Text
-                                        text="Que horas sairas?" />
                                     <TimePicker
                                         id="leaveTime"
-                                        value="23:30"
+                                        value="{selectedMember>/LeaveTime}"
                                         valueFormat="HH:mm"
                                         displayFormat="HH:mm"
                                         minutesStep="15"
-                                        change="handleChange" />
+                                        change="handleChange">
+                                        <layoutData>
+                                            <l:GridData span="L2 M2 S4" />
+                                        </layoutData>
+                                    </TimePicker>
                                 </f:fields>
                             </f:FormElement>
                         </f:formElements>

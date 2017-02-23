@@ -4,22 +4,71 @@
             "Name": "Bernard",
             "Nick": "Berne",
             "ArrivalTime": "22:00",
-            "LeaveTime": "00:00",
+            "LeaveTime": "01:00",
             "isGoing" : true
         },
         {
             "Name": "Henrique",
             "Nick": "Jay",
             "ArrivalTime": "21:15",
-            "LeaveTime": "00:00",
+            "LeaveTime": "23:00",
             "isGoing" : false
         },
         {
             "Name": "Eduardo",
             "Nick": "Eddy",
             "ArrivalTime": "21:15",
-            "LeaveTime": "00:00",
+            "LeaveTime": "23:30",
             "isGoing" : true
+        },
+        {
+            "Name": "Gabriel",
+            "Nick": "Gabiru",
+            "ArrivalTime": "19:30",
+            "LeaveTime": "22:00",
+            "isGoing" : true
+        },
+        {
+            "Name": "Diego",
+            "Nick": "Didi",
+            "ArrivalTime": "00:00",
+            "LeaveTime": "00:00",
+            "isGoing" : false
+        },
+        {
+            "Name": "Bernardo",
+            "Nick": "Bernadeira",
+            "ArrivalTime": "00:00",
+            "LeaveTime": "00:00",
+            "isGoing" : false
+        },
+        {
+            "Name": "Ezequiel",
+            "Nick": "Banha",
+            "ArrivalTime": "22:00",
+            "LeaveTime": "23:59",
+            "isGoing" : true
+        },
+        {
+            "Name": "Ber Fleck",
+            "Nick": "Ber",
+            "ArrivalTime": "00:00",
+            "LeaveTime": "00:00",
+            "isGoing" : false
+        },
+        {
+            "Name": "Felipe Leite",
+            "Nick": "Leite",
+            "ArrivalTime": "00:00",
+            "LeaveTime": "00:00",
+            "isGoing" : false
+        },
+        {
+            "Name": "Marcel",
+            "Nick": "M4rcel",
+            "ArrivalTime": "00:00",
+            "LeaveTime": "00:00",
+            "isGoing" : false
         }
     ]
 }

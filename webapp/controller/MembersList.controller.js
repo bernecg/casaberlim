@@ -1,13 +1,12 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], function (Controller) {
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/json/JSONModel",
+    "sap/m/MessageToast"
+], function (Controller, JSONModel, MessageToast) {
     "use strict";
 
     return Controller.extend("bcg.casaberlim.controller.MembersList", {
-        onInit : function () {
-        },
-
-        onOpenReserveDialog : function () {
+        onOpenReserveDialog : function (oEvent) {
             var oView = this.getView();
             var oDialog = oView.byId("reserveDialog");
 
@@ -19,10 +18,21 @@ sap.ui.define([
                 oView.addDependent(oDialog);
             }
 
+            var oSource = oEvent.getSource(),
+                oSelected = oSource.getSelectedItem(),
+                oModel = oSelected.getBindingContext("members").getModel(),
+                oSelectedData =oModel.getProperty(oSelected.getBindingContext("members").getPath()),
+                oJSONModel = new JSONModel(oSelectedData);
+            this.getView().setModel(oJSONModel, "selectedMember");
             oDialog.open();
         },
-        onCloseReserveDialog : function () {
+
+        onCloseReserveDialog : function (evt) {
             this.getView().byId("reserveDialog").close();
+        },
+
+        onGoingSwitchChange : function (evt) {
+            MessageToast.show("Changed!" + evt);
         }
     });
 });

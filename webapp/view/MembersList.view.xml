@@ -2,22 +2,44 @@
     controllerName="bcg.casaberlim.controller.MembersList"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <List
-        headerText="{i18n>MembersListTitle}"
-        class="sapUiResponsiveMargin"
-        width="auto"
+    <Table id="idMembersTable"
+        inset="false"
+        mode="SingleSelectMaster"
+        itemPress="onOpenReserveDialog"
         items="{
             path: 'members>/Members',
             sorter : {
-                path: 'isGoing',
+                path : 'isGoing',
                 descending: true
             }
-        }"
-        >
+        }">
+
+        <columns>
+            <Column>
+                <Text text="{i18n>columnName}" />
+            </Column>
+            <Column>
+                <Text text="{i18n>columnStatus}" />
+            </Column>
+            <Column>
+                <Text text="{i18n>columnArrivalTime}" />
+            </Column>
+            <Column>
+                <Text text="{i18n>columnLeaveTime}" />
+            </Column>
+        </columns>
+
         <items>
-            <ObjectListItem
-                title="{members>Nick} | {members>ArrivalTime} - {members>LeaveTime}"
-                press="onOpenReserveDialog"/>
+            <ColumnListItem type="Active">
+                <cells>
+                    <ObjectIdentifier title="{members>Nick}"
+                        text="{members>Name}" />
+                    <ObjectStatus icon="sap-icon://accept" />
+                    <Text text="{members>ArrivalTime}" visible="{members>isGoing}" />
+                    <Text text="{members>LeaveTime}" visible="{members>isGoing}" />
+                </cells>
+            </ColumnListItem>
         </items>
-    </List>
+
+    </Table>
 </mvc:View>
