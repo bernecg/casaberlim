@@ -1,6 +1,7 @@
 <mvc:View
     controllerName="bcg.casaberlim.controller.MembersList"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
     <Table id="idMembersTable"
         inset="false"
@@ -15,16 +16,16 @@
         }">
 
         <columns>
-            <Column>
-                <Text text="{i18n>columnName}" />
-            </Column>
-            <Column>
+            <Column width="30px" vAlign="Middle">
                 <Text text="{i18n>columnStatus}" />
             </Column>
             <Column>
+                <Text text="{i18n>columnName}" />
+            </Column>
+            <Column vAlign="Middle">
                 <Text text="{i18n>columnArrivalTime}" />
             </Column>
-            <Column>
+            <Column vAlign="Middle">
                 <Text text="{i18n>columnLeaveTime}" />
             </Column>
         </columns>
@@ -32,9 +33,12 @@
         <items>
             <ColumnListItem type="Active">
                 <cells>
+                    <core:Icon
+                        src="{= ${members>isGoing} ? 'sap-icon://accept' : 'sap-icon://decline'}"
+                        color="{= ${members>isGoing} ? 'green' : 'red'}"
+                        />
                     <ObjectIdentifier title="{members>Nick}"
                         text="{members>Name}" />
-                    <ObjectStatus icon="sap-icon://accept" />
                     <Text text="{members>ArrivalTime}" visible="{members>isGoing}" />
                     <Text text="{members>LeaveTime}" visible="{members>isGoing}" />
                 </cells>

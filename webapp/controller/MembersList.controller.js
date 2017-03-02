@@ -8,8 +8,15 @@ sap.ui.define([
     return Controller.extend("bcg.casaberlim.controller.MembersList", {
         onOpenReserveDialog : function (oEvent) {
             var oView = this.getView();
-            var oDialog = oView.byId("reserveDialog");
 
+            var oSource = oEvent.getSource(),
+                oSelected = oSource.getSelectedItem(),
+                oModel = oSelected.getBindingContext("members").getModel(),
+                oSelectedData = oModel.getProperty(oSelected.getBindingContext("members").getPath()),
+                oJSONModel = new JSONModel(oSelectedData);
+            oView.setModel(oJSONModel, "selectedMember");
+
+            var oDialog = oView.byId("reserveDialog");
             // Create dialog lazily
             if (!oDialog) {
                 // create dialog via fragment factory
@@ -18,21 +25,12 @@ sap.ui.define([
                 oView.addDependent(oDialog);
             }
 
-            var oSource = oEvent.getSource(),
-                oSelected = oSource.getSelectedItem(),
-                oModel = oSelected.getBindingContext("members").getModel(),
-                oSelectedData =oModel.getProperty(oSelected.getBindingContext("members").getPath()),
-                oJSONModel = new JSONModel(oSelectedData);
-            this.getView().setModel(oJSONModel, "selectedMember");
             oDialog.open();
         },
 
-        onCloseReserveDialog : function (evt) {
+        onSaveReserveDialog : function (evt) {
             this.getView().byId("reserveDialog").close();
-        },
-
-        onGoingSwitchChange : function (evt) {
-            MessageToast.show("Changed!" + evt);
+            this.getView().getModel("members").refresh(true);
         }
     });
 });
