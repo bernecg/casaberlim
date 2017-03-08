@@ -31,6 +31,29 @@ sap.ui.define([
         onSaveReserveDialog : function (evt) {
             this.getView().byId("reserveDialog").close();
             this.getView().getModel("members").refresh(true);
+
+            var oData = this.getView().getModel("selectedMember").oData;
+            var oChangedMember = '{'
+                + '"Name": "'        + oData['Name'] + '",'
+                + '"Comment": "'     + oData['Comment'] + '",'
+                + '"ArrivalTime": "' + oData['ArrivalTime'] + '",'
+                + '"LeaveTime": "'   + oData['LeaveTime'] + '",'
+                + '"isGoing": '      + oData['isGoing'] + ','
+                + '"isThere": '      + oData['isThere']
+                + '}';
+
+            var aData = jQuery.ajax({
+                url : "/server/RestServer.php",
+                //url : "localhost:8081",
+                type : "POST",
+                dataType : "json",
+                data: oChangedMember,
+                async: false,
+                complete : function(output) {
+                    console.log(output);
+                }
+            });
+
         }
     });
 });

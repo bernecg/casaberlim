@@ -2,283 +2,323 @@
     "Members": [
         {
             "Name": "Ademir Gutierri",
-            "Nick": "Ademas",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Anderson Maroski",
-            "Nick": "Maroski",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Andres Yamandu",
-            "Nick": "Yaman",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Anwar Hwas",
-            "Nick": "Anwar",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Bernard Caye",
-            "Nick": "Berne",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Bernardo Fleck",
-            "Nick": "Ber Fleck",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Bernardo Reckziegel",
-            "Nick": "Crazy Dog",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Daniel Ferrao",
-            "Nick": "Ferrao",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Daniel Tremarin",
-            "Nick": "Nunca vai",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Diego Biegler de Oliveira",
-            "Nick": "Didi,a lenda",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Diego Franca",
-            "Nick": "Joselito",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Eduardo Lombardo",
-            "Nick": "Dudu",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Eduardo Martins",
-            "Nick": "Baldasseddy",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Ezequiel Fajreldines",
-            "Nick": "Banha",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Fabien Bercht",
-            "Nick": "Alemao",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Fabio Ruschel",
-            "Nick": "Ruschel",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Felipe Abrantes",
-            "Nick": "Abra-Kadabra-Alakazam",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Felipe Leite",
-            "Nick": "Huh",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Felipe Sperling",
-            "Nick": "Sperling (Dalhe Charrua!)",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Fernando Detanico",
-            "Nick": "Galeto",
-            "ArrivalTime": "00:00",
-            "LeaveTime": "00:00",
-            "isGoing" : false
+            "Comment": "",
+            "ArrivalTime": "22:00",
+            "LeaveTime": "23:00",
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Filipe Jeffman",
-            "Nick": "Pimpo",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Frederico Garcez",
-            "Nick": "Fred",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Gabriel Fumagalli",
-            "Nick": "Albinus",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Gabriel Sandler",
-            "Nick": "Sandler",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Germano Basler",
-            "Nick": "Coco man",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Glauco Konzen",
-            "Nick": "Glauco",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Gustavo Kirst",
-            "Nick": "Miliko",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Henrique Basler",
-            "Nick": "Jay",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Klaus Nery",
-            "Nick": "Klaus",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Lauro Brum",
-            "Nick": "Lauro",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Leonardo Possamai",
-            "Nick": "Possa",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Leonardo Rocha",
-            "Nick": "Rocha",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Lucas Goncalves",
-            "Nick": "Papeleiro",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Marcel Salaverry",
-            "Nick": "M4rcel",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Pablo Rodrigues",
-            "Nick": "Olbap",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Raoni Pereira",
-            "Nick": "Raoni",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Rafael Paglioli",
-            "Nick": "Pagli",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Ricardo Frederes",
-            "Nick": "Rikart",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Rodrigo DallAgnese",
-            "Nick": "Dalanha",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         },
         {
             "Name": "Tiago Menna",
-            "Nick": "Menna",
+            "Comment": "",
             "ArrivalTime": "00:00",
             "LeaveTime": "00:00",
-            "isGoing" : false
+            "isGoing": false,
+            "isThere": false
         }
     ]
 }

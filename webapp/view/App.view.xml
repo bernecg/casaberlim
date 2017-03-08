@@ -5,7 +5,7 @@
     displayBlock="true">
     <App>
         <pages>
-            <Page title="{i18n>homePageTitle}">
+            <Page title="{i18n>homePageTitle}" >
                 <content>
                     <!--mvc:XMLView viewName="bcg.casaberlim.view.membersListPanel"/-->
                     <mvc:XMLView viewName="bcg.casaberlim.view.MembersList"/>

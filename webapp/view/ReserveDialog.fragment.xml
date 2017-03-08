@@ -4,10 +4,9 @@
     xmlns:tnt="sap.tnt" >
     <Dialog
         id="reserveDialog"
-        title="{i18n>homePageTitle}">
+        showHeader="false">
         <tnt:ToolHeader>
-            <Title text="{i18n>reserveDialogSwitchText}"
-                level="H4" titleStyle="H4" class="sapUiSmallMarginBegin"/>
+            <Title text="{i18n>reserveDialogSwitchGoing}" class="sapUiSmallMarginBegin"/>
             <ToolbarSpacer />
             <Switch state="{selectedMember>/isGoing}"
                 customTextOn="{i18n>reserveDialogSwitchOn}"
@@ -34,6 +33,16 @@
                     minutesStep="15"
                     change="handleChange"
                     width="150px" />
+            </InputListItem>
+            <InputListItem label="{i18n>reserveDialogComment}">
+                <Input type="Text" maxLength="60"
+                    placeholder="Escreve algo ai"
+                    value="{selectedMember>/Comment}" />
+            </InputListItem>
+            <InputListItem label="{i18n>reserveDialogSwitchThere}">
+                <Switch state="{selectedMember>/isThere}"
+                    customTextOn="{i18n>reserveDialogSwitchOn}"
+                    customTextOff="{i18n>reserveDialogSwitchOff}" />
             </InputListItem>
         </List>
         <endButton>

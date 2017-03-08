@@ -16,8 +16,8 @@
         }">
 
         <columns>
-            <Column width="30px" vAlign="Middle">
-                <Text text="{i18n>columnStatus}" />
+            <Column width="30px" vAlign="Middle" hAlign="Center" >
+                <Text text="{i18n>columnStatusGoing}" />
             </Column>
             <Column>
                 <Text text="{i18n>columnName}" />
@@ -28,6 +28,9 @@
             <Column vAlign="Middle">
                 <Text text="{i18n>columnLeaveTime}" />
             </Column>
+            <Column width="40px" vAlign="Middle" hAlign="Center" >
+                <Text text="{i18n>columnStatusThere}" />
+            </Column>
         </columns>
 
         <items>
@@ -37,10 +40,14 @@
                         src="{= ${members>isGoing} ? 'sap-icon://accept' : 'sap-icon://decline'}"
                         color="{= ${members>isGoing} ? 'green' : 'red'}"
                         />
-                    <ObjectIdentifier title="{members>Nick}"
-                        text="{members>Name}" />
+                    <ObjectIdentifier title="{members>Name}"
+                        text="{members>Comment}" />
                     <Text text="{members>ArrivalTime}" visible="{members>isGoing}" />
                     <Text text="{members>LeaveTime}" visible="{members>isGoing}" />
+                    <core:Icon
+                        src="{= ${members>isThere} ? 'sap-icon://accept' : 'sap-icon://decline'}"
+                        color="{= ${members>isThere} ? 'green' : 'red'}"
+                        />
                 </cells>
             </ColumnListItem>
         </items>
